@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML FORM User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>WDD 130 | HTML FORM User Poll
+
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="surname" required>
+                </div>
+            </fieldset>
+
+            <label for="quantity">Select Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite interent browser?</label>
+                    <select name="browserr" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have any household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="form-item">
+                    <label for="feedback">List of the places you lived:</label>
+                    <textarea name="feedback" id="feedback" rows="4"
+                      placeholder="Stillwater Florida, Amsterdam Netherlands, Lagos Nigeria"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 | HTML Form - User Poll Activity | Oluwatobi Adeleye
+    </footer>
+</body>
+
+</html>

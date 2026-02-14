@@ -77,14 +77,20 @@ article {
     padding: 8px;
 }
 
+.history-section,
+.adventure-section,
+.employee-section {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 20px 16px;
+}
+
 .history-section {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 20px;
-    border: 1px solid #333;
-    padding: 20px;
-    margin: 20px 16px;
+
 }
 
 .history-section h2 {
@@ -104,24 +110,20 @@ article {
     height: auto;
 }
 
-.adventure-section {
-    margin: 20px 16px;
-    padding: 20px;
-    border: 1px solid #333;
-}
-
-.adventure-section h2 {
+.adventure-section h2,
+.employee-section {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.adventure-gallery {
+.adventure-gallery,
+.employee-profiles {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-.adventure-gallery figure {
+.adventure-gallery figure .employee-profiles figure {
     flex: 1;
     margin: 0;
     padding: 0;
@@ -134,10 +136,20 @@ article {
     display: block;
 }
 
-.adventure-gallery figcaption {
+.adventure-gallery figcaption,
+.employee-profiles figcaption {
     margin-top: 8px;
     font-size: 14px;
     color: var(--accent1-color);
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
@@ -146,6 +158,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia {
@@ -199,4 +216,113 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    position: static;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 16px;
+}
+
+.map-container {
+    background-color: #e0e0e0;
+    min-height: 400px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    display: block
+}
+
+.form-container input [type="text"],
+.form-container input [type="email"],
+.form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: var(--body-font);
+    width: 100%;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    border: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    display: block;
+    margin: 8px 0;
+}
+
+.radio-group input [type="radio"] {
+    margin-right: 8px;
+}
+
+.newsletter-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.newsletter-checkbox input [type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.form-container button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #666;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button :hover {
+    background-color: var(--primary-color);
+    color: white;
 }

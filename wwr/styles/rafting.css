@@ -159,6 +159,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
 }
 
 footer p {
